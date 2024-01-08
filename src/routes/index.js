@@ -7,6 +7,7 @@ import Following from '~/pages/Following';
 import Upload from '~/pages/Upload';
 import Search from '~/pages/Search';
 
+//Don't have to login
 const publicRoutes = [
     { path: '/', component: Home },
     { path: '/following', component: Following },
@@ -14,7 +15,7 @@ const publicRoutes = [
     { path: '/search', component: Search, layout: null },
 ];
 
-//Have to login
+//Have to login to access
 const privateRoutes = [];
 
 export { publicRoutes, privateRoutes };
