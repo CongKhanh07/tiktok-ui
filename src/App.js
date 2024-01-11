@@ -4,18 +4,17 @@ import { Fragment } from 'react';
 // Import file
 import { publicRoutes } from '~/routes';
 import DefaultLayout from '~/components/Layout/DefaultLayout';
-import HeaderOnly from './components/Layout/HeaderOnly';
 
 //Function App
 function App() {
     return (
         <div className="App">
-            <nav>
+            {/* <nav>
                 <Link to="/">Home page</Link>
                 <Link to="/following">Following page</Link>
                 <Link to="/upload">Upload page</Link>
                 <Link to="/search">Search page</Link>
-            </nav>
+            </nav> */}
 
             {/* Router */}
             <Routes>

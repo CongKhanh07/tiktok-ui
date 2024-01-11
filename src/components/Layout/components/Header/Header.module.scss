@@ -9,14 +9,21 @@
 .inner {
     height: 100%;
     width: var(--default-layout-width);
-    background-color: #ccc;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo {
+.search-result {
+    width: 361px;
+}
+
+.search-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    color: rgba(22, 24, 35, 0.5);
 }
 
 .search {
@@ -85,3 +92,8 @@
         background-color: rgba(22, 24, 35, 0.06);
     }
 }
+
+//Custom ClassName For Btn
+// .custom {
+//     color: aqua;
+// }
