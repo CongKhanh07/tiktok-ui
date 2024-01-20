@@ -34,8 +34,6 @@ function Button({
         ...passProps,
     };
 
-    console.log(props);
-
     const classes = cx('wrapper', {
         primary: primary,
         outline: outline,

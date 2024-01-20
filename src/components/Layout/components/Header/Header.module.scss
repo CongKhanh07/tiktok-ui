@@ -9,7 +9,7 @@
 .inner {
     height: 100%;
     width: var(--default-layout-width);
-
+    padding: 0px 24px 0px 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -93,7 +93,33 @@
     }
 }
 
-//Custom ClassName For Btn
-// .custom {
-//     color: aqua;
-// }
+//ACTIONS
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.more-btn {
+    font-size: 2rem;
+    margin-left: 28px;
+    padding: 8px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.action-btn {
+    color: #161823;
+    padding: 4px 12px;
+    font-size: 2.2rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 12px;
+    cursor: pointer;
+}

@@ -5,7 +5,7 @@
     --primary: #fe2c55;
     --black: #000;
     --white: #fff;
-    --text-color: #333;
+    --text-color: #161823;
 
     //Default layout
     --default-layout-header-height: 60px;
@@ -35,13 +35,33 @@ input,
 [tabindex] {
     outline: none;
     border: none;
+    font-family: 'IBM Plex Sans', 'san-serif';
 }
 
 a[href] {
     color: var(--text-color);
+    text-decoration: none;
 }
 
-//Test delete when finish
+//Test and I will delete when finish the project
 nav {
     margin-top: 10px;
+}
+
+//Ghi đè lại CSS của Tippy
+
+.tippy-box {
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: rgba(84, 84, 84, 0.92);
+}
+
+.tippy-arrow {
+    color: rgba(84, 84, 84, 0.92);
+}
+
+.tippy-content {
+    padding: 8px 9px;
 }
