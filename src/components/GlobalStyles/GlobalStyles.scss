@@ -1,5 +1,5 @@
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
 
 :root {
     --primary: #fe2c55;
@@ -23,11 +23,12 @@ html {
 }
 
 body {
-    font-family: 'IBM Plex Sans', 'san-serif';
+    font-family: 'ProximaNova', 'san-serif';
     font-size: 1.6rem;
     //line-height: 1.5px;
     text-rendering: optimizeSpeed;
     color: var(--text-color);
+    overflow-y: overlay;
 }
 
 button,
@@ -35,7 +36,7 @@ input,
 [tabindex] {
     outline: none;
     border: none;
-    font-family: 'IBM Plex Sans', 'san-serif';
+    font-family: 'ProximaNova';
 }
 
 a[href] {
@@ -43,13 +44,7 @@ a[href] {
     text-decoration: none;
 }
 
-//Test and I will delete when finish the project
-nav {
-    margin-top: 10px;
-}
-
 //Ghi đè lại CSS của Tippy
-
 .tippy-box {
     border-radius: 8px;
     font-weight: 600;
@@ -65,3 +60,30 @@ nav {
 .tippy-content {
     padding: 8px 9px;
 }
+
+//Nhúng fonts
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/fonts/Proxima-Nova-Bold.woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/fonts/Proxima-Nova-Regular.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/fonts/ProximaNova-Semibold.woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: SofiaPro;
+    src: url('/assets/fonts/sofiapro-bold.woff');
+    font-weight: 700;
+}
+
+//SCROLLBAR CSS

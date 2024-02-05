@@ -47,12 +47,13 @@ function Menu({ children, items }) {
             interactive
             delay={[0, 700]}
             offset={[10, 10]}
+            hideOnClick={false}
             placement="bottom-end"
             render={(attrs) => (
                 <div className={cx('menu-items')} tabIndex="-1" {...attrs}>
                     <PopperWrapper className={cx('menu-wrapper')}>
                         {history.length > 1 && <Header title={current.title} onBack={onBack} />}
-                        {renderItems(current.data)}
+                        <div className={cx('menu-body')}>{renderItems(current.data)}</div>
                     </PopperWrapper>
                 </div>
             )}
