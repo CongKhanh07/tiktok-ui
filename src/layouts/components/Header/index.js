@@ -23,7 +23,7 @@ import Button from '~/components/Button';
 import Menu from '~/components/Menu';
 import { UploadIcon, MessageIcon, InboxIcon } from '~/components/Icons';
 import Image from '~/components/Image';
-import Search from '~/components/Layout/components/Search';
+import Search from '~/layouts/components/Search';
 import pathName from '~/config/pathName';
 
 const cx = classNames.bind(styles);

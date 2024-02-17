@@ -3,7 +3,9 @@ import { Fragment } from 'react';
 
 // Import file
 import { publicRoutes } from '~/routes';
-import DefaultLayout from '~/components/Layout/DefaultLayout';
+import DefaultLayout from '~/layouts/DefaultLayout';
+
+console.log(process.env);
 
 //Function App
 function App() {
